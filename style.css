@@ -1,67 +1,92 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f3f4f6;
 }
 
 .calculator {
-  width: 320px;
-  background: #4E4E4E;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    background: #4E4E4E;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 #display {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 20px;
-  background: #CFDFCF;
-  border: none;
-  border-radius: 8px;
-  font-size: 20px;
-  text-align: right;
-  color: #333;
-  outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #CFDFCF;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: right;
+    outline: none;
 }
 
 .buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 
 button {
-  padding: 18px;
-  font-size: 18px;
-  border: none;
-  border-radius: 8px;
-  background: #EBEBEA;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  font-weight: 500;
+    padding: 18px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #EBEBEA;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 button:hover {
-  background: #d1d5db;
-  transform: scale(1.05);
+    background: #d1d5db;
 }
 
 .equal {
-  background: #FDC283;
-  color: #fff;
-  grid-column: span 2;
+    background: #FDC283;
+    color: white;
+    grid-column: span 1;
 }
 
-.equal:hover {
-  background: #ffb95c;
+
+/* Responsive for Mobile */
+@media (max-width: 400px) {
+    .calculator {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #display {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+/* Responsive for very small screens */
+@media (max-width: 300px) {
+    #display {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
 }
