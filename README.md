@@ -12,6 +12,11 @@ A simple calculator built using **HTML, CSS, and JavaScript**.
 - Responsive layout
 
 ---
+## 🚀 Live Demo
+
+Try the calculator online: [Click Here](https://akashghosh666.github.io/calculator/)
+
+---
 
 ## Preview
 
